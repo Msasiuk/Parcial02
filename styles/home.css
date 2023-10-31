@@ -1,0 +1,130 @@
+.banner {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 2.5rem 1rem;
+}
+
+.banner-h1 {
+    font-size: 3.5rem;
+    text-shadow: 5px 5px #F8D4D1;
+    margin-bottom: 1.5rem;
+}
+
+.banner-span {
+    font-style: italic;
+}
+
+.banner-p1,
+.banner-p2 {
+    font-size: 1.8rem;
+}
+
+.banner-p1 {
+    margin-bottom: 0.2em;
+    margin-left: -10em;
+}
+
+.banner-p2 {
+    margin-left: +10em;
+}
+
+.product-h2 {
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Seccion de productos */
+.div-products-l {
+    justify-content: space-around;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
+    background-color: rgba(253, 249, 229, 0.5);
+    background-color: rgba(184, 175, 165, 0.5);
+    padding-bottom: 1em;
+    margin-bottom: 30px;
+}
+
+.div-products-m {
+    justify-content: space-around;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+    background-color: rgba(253, 249, 229, 0.5);
+    background-color: rgba(184, 175, 165, 0.5);
+    padding-bottom: 1em;
+    margin-bottom: 30px;
+}
+
+.section-h2 {
+    flex: 1 100%;
+    font-size: 2.5rem;
+    padding: 0.1em 1em;
+}
+
+.article-products-l,
+.article-products-m,
+.section-h2 {
+    background-color: rgba(253, 249, 229, 1);
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 3px 3px 15px 2px rgba(0, 0, 0, 0.4);
+}
+
+.article-products-l {
+    border-radius: 20px;
+    width: 350px;
+    padding: 1.2em;
+}
+
+.article-products-m {
+    border-radius: 20px;
+    width: 300px;
+    padding: 1.2em;
+}
+
+.article-h3 {
+    padding-top: 0.5em;
+    font-size: 1.5rem;
+    /* text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); */
+    text-transform: uppercase;
+}
+
+
+.article-img {
+    /* Imagen dentro del div */
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.article-description {
+    padding: 0.5rem 0rem 1rem 0rem;
+}
+
+.div-price-button {
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+
+}
+
+.article-price {
+    color: #716E60;
+    font-weight: bold;
+}
+
+.button {
+    padding: 8px;
+    background-color: #B8AFA5;
+    text-transform: uppercase;
+    border-radius: 10px;
+    border-style: none;
+    color: #FEFDFC;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #716E60;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.4);
+}

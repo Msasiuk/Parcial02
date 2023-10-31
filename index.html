@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hecho con Amor</title>
+    <link rel="icon" type="image/png" href="./assets/logo.png" />
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/home.css" />
+    <!-- Estilo de fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <ul class="nav-ul flex-row">
+                <!-- noopener evita pasar la información de referencia al sitio web de destino
+                     al eliminar la información de referencia del encavezado HTTP 
+                    noreferrer se desea que otros sitios no sepan que se están enlazando a ellos. No se usa en enlaces internos-->
+                <li class="nav-img"><img class="logo" src="./assets/logo.png"></li>
+                <div class="div-nav flex-row">
+                    <li class="nav-li"><a class="nav-a nav-active" href="#" rel="noopener">Home</a></li>
+                    <li class="nav-li"><a class="nav-a" href="./about_us.html" rel="noopener">Sobre Nosotros</a></li>
+                    <li class="nav-li"><a class="nav-a" href="./contact.html" rel="noopener">Contacto</a></li>
+                    <li class="nav-li"><a class="nav-a" href="./register.html" rel="noopener">Registrate</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main open-nav translate-y">
+        <section class="banner">
+            <h1 class="banner-h1">TARTAS Y TARTALETAS by <span class="banner-span">Hecho con Amor</span></h1>
+            <p class="banner-p1">
+                Delicias para compartir..
+            </p>
+            <p class="banner-p2">
+                Tentaciones para disfrutar..
+            </p>
+        </section>
+
+        <section class="flex-row div-products-l translate-y">
+            <h2 class="section-h2 flex-row">Tartas</h2>
+            <article class="article-products-l">
+                <img class="article-img" src="./assets/tarta_cabsha.jpg">
+                <h3 class="article-h3">- Cabsha -</h3>
+                <p class="article-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Reprehenderit,
+                    eius.</p>
+                <div class="div-price-button">
+                    <p class="article-price">$2.750,00</p>
+                    <button class="button" onclick="agregarAlCarrito('Producto 1', 2750.00)">Agregar</button>
+                </div>
+            </article>
+            <article class="article-products-l">
+                <img class="article-img" src="./assets/tarta_coco.jpg">
+                <h3 class="article-h3">- Coco -</h3>
+                <p class="article-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Reprehenderit,
+                    eius.</p>
+                <div class="div-price-button">
+                    <p class="article-price">$2.750,00</p>
+                    <button class="button" onclick="agregarAlCarrito('Producto 2', 2750.00)">Agregar</button>
+                </div>
+            </article>
+            <article class="article-products-l">
+                <img class="article-img" src="./assets/tarta_durazno.jpg">
+                <h3 class="article-h3">- Durazno -</h3>
+                <p class="article-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Reprehenderit,
+                    eius.</p>
+                <div class="div-price-button">
+                    <p class="article-price">$3.200,00</p>
+                    <button class="button" onclick="agregarAlCarrito('Producto 3', 3200.00)">Agregar</button>
+                </div>
+            </article>
+            <article class="article-products-l">
+                <img class="article-img" src="./assets/tarta_lemon_pie.jpg">
+                <h3 class="article-h3">- Lemon Pie -</h3>
+                <p class="article-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Reprehenderit,
+                    eius.</p>
+                <div class="div-price-button">
+                    <p class="article-price">$2.200,00</p>
+                    <button class="button" onclick="agregarAlCarrito('Producto 4', 2200.00)">Agregar</button>
+                </div>
+            </article>
+            <article class="article-products-l">
+                <img class="article-img" src="./assets/tarta_ricota.jpg">
+                <h3 class="article-h3">- Ricota -</h3>
+                <p class="article-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Reprehenderit,
+                    eius.</p>
+                <div class="div-price-button">
+                    <p class="article-price">$2.500,00</p>
+                    <button class="button" onclick="agregarAlCarrito('Producto 5', 2500.00)">Agregar</button>
+                </div>
+            </article>
+        </section>
+
+        <section class="flex-row div-products-m translate-y">
+            <h2 class="section-h2 flex-row">Tartaletas</h2>
+            <article class="article-products-m">
+                <img class="article-img" src="./assets/tartaleta_cabsha.jpg">
+                <h3 class="article-h3">- Cabsha -</h3>
+                <p class="article-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Reprehenderit,
+                    eius.</p>
+                <div class="div-price-button">
+                    <p class="article-price">$360,00</p>
+                    <button class="button" onclick="agregarAlCarrito('Producto 7', 360.00)">Agregar</button>
+                </div>
+            </article>
+            <article class="article-products-m">
+                <img class="article-img" src="./assets/tartaleta_coco.jpg">
+                <h3 class="article-h3">- Coco -</h3>
+                <p class="article-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Reprehenderit,
+                    eius.</p>
+                <div class="div-price-button">
+                    <p class="article-price">$360,00</p>
+                    <button class="button" onclick="agregarAlCarrito('Producto 8', 360.00)">Agregar</button>
+                </div>
+            </article>
+            <article class="article-products-m">
+                <img class="article-img" src="./assets/tartaleta_durazno.jpg">
+                <h3 class="article-h3">- Durazno -</h3>
+                <p class="article-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Reprehenderit,
+                    eius.</p>
+                <div class="div-price-button">
+                    <p class="article-price">$420,00</p>
+                    <button class="button" onclick="agregarAlCarrito('Producto 9', 420.00)">Agregar</button>
+                </div>
+            </article>
+            <article class="article-products-m">
+                <img class="article-img" src="./assets/tartaleta_lemon_pie.jpg">
+                <h3 class="article-h3">- Lemon Pie -</h3>
+                <p class="article-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Reprehenderit,
+                    eius.</p>
+                <div class="div-price-button">
+                    <p class="article-price">$290,00</p>
+                    <button class="button" onclick="agregarAlCarrito('Producto 10', 290.00)">Agregar</button>
+                </div>
+            </article>
+            <article class="article-products-m">
+                <img class="article-img" src="./assets/tartaleta_ricota.jpg">
+                <h3 class="article-h3">- Ricota -</h3>
+                <p class="article-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Reprehenderit,
+                    eius.</p>
+                <div class="div-price-button">
+                    <p class="article-price">$320,00</p>
+                    <button class="button" onclick="agregarAlCarrito('Producto 11', 320.00)">Agregar</button>
+                </div>
+            </article>
+        </section>
+        <section class="div-products-l translate-y">
+            <h2 class="section-h2 flex-row">Carrito de Compras</h2>
+            <p>Para confirmar el pedido necesita un usuario y contraseña</p>
+            <form action="shop.php" method="POST" onsubmit="return validarFormulario()">
+                <ul class="flex-container" id="carrito-lista">
+                    <!-- Los productos agregados al carrito se van a mostrar acá -->
+                </ul>
+                <p>Total: <span id="carrito-total">$0.00</span></p>
+                <input type="hidden" id="carrito-datos" name="carrito-datos">
+                <button class="button" type="button" onclick="vaciarCarrito()">Vaciar Carrito</button>
+                <button class="button" type="submit">Confirmar Pedido</button>
+                <div class="flex-row">
+                    <div class="div-m">
+                        <label for="usuario">Usuario</label>
+                        <input type="text" class="input-text" id="usuario" name="usuario" required>
+                    </div>
+                    <div class="div-m">
+                        <label for="contrasenia">Contraseña</label>
+                        <input type="password" class="input-text" id="contrasenia" name="contrasenia" required>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="foo">
+        <ul class="foo-ul flex-row">
+            <li class="foo-li">
+                <p class="li-p">Natalia Maza Sasiuk</p>
+                <p class="li-p">Mendoza, Argentina 2023 ©</p>
+            </li>
+
+            <div class="div-nav flex-row">
+                <li class="foo-li"><a href="mailto:informes@iesmb.edu.ar" rel="noopener" target="_blank"><img
+                            class="img-a" src="./assets/mail.png"></a></li>
+                <li class="foo-li"><a href="https://www.instagram.com/ies9008manuelbelgrano/" rel="noopener"
+                        target="_blank"><img class="img-a" src="./assets/instagram.png"></a></li>
+                <li class="foo-li"><a href="#" rel="noopener" target="_blank"><img class="img-a"
+                            src="./assets/whatsapp.png"></a></li>
+            </div>
+        </ul>
+    </footer>
+    <script src="./scripts/shop.js"></script>
+</body>
+
+</html>
